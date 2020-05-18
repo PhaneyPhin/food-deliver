@@ -1,0 +1,45 @@
+table {
+    width: 100%;
+  }
+  
+  .example-first-header-row th {
+    border-bottom: none;
+  }
+  
+  .example-second-header-row {
+    font-style: italic;
+  }
+  
+  .example-first-footer-row {
+    font-weight: bold;
+  }
+  
+  .example-second-footer-row td {
+    color: #900000;
+  }
+  .container{
+    width:80%;
+    margin  :auto;
+    background:white;
+    padding:20px;
+   // box-shadow: 3px 3px gray;
+    margin-bottom: 10px;
+  }
+  button{
+    margin-left:20px;
+  }
+  @media print {
+    .container > * { display: none; }
+    .container #mypdf { 
+        display: block;
+        position: fixed;
+        left:0;
+     }
+     .container #mypdf td{
+         min-width:100px;
+     }
+     .food_name{
+         width:300px;
+     }
+  }
+  

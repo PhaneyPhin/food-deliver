@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;background:#fafafa }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  
+  .background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  
+    display: block;
+    background:#eef5f9 !important;
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    
+    height: 100%; 
+
+  
+  }
+  .title{
+    p{
+      letter-spacing: 3px;
+    }
+  }
+  @media print {
+    app-root > * { display: none; }
+    .main { display: block; }
+  }
+  @media (max-width: 600px) {
+    .container,.nav,.header,.footer{
+      min-width:600px;
+      margin-left:0px;
+
+    }
+    .footer{
+      width:100%;
+    }
+  }
+  
+  .head{
+     
+      width:100%;
+      z-index: 10;
+  }
+
+  .content {
+    position: absolute ;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    
+
+  }
+.container{
+  min-height:500px;
+  box-shadow: none !important;
+}
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";

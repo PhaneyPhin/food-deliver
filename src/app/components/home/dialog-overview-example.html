@@ -1,0 +1,75 @@
+<div class='dialog'>
+    <h1 mat-dialog-title>{{data.type}}</h1>
+    <div mat-dialog-content>
+    
+      <table>
+        <tr>
+          <td class="label">Food Name</td>
+          <td>
+            <mat-form-field>
+              <input matInput [(ngModel)]="data.food_name" />
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Price</td>
+          <td>
+            <mat-form-field>
+              <input type="number" matInput [(ngModel)]="data.price" />
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Type</td>
+          <td>
+            <mat-form-field>
+              <mat-select [(ngModel)]="data.type_id">
+                <mat-option *ngFor="let type of food_type" [value]="type.type_id">
+                  {{type.type_name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Description</td>
+          <td>
+            <mat-form-field>
+              <textarea matInput [(ngModel)]="data.description" ></textarea>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Favorite</td>
+          <td>
+            <mat-form-field>
+              <mat-select [(ngModel)]="data.favorite">
+                <mat-option *ngFor="let f of favorite" [value]="f.value">
+                  {{f.show}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Image</td>
+          <td>
+            <input
+              style="display: none"
+              type="file"
+              (change)="onFileChanged($event)"
+              #fileInput
+            />
+            <button mat-raised-button  (click)="fileInput.click()">Select File</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-raised-button (click)="submit()" color="primary">Save</button>
+      <button mat-raised-button [mat-dialog-close]="">
+        Cancel
+      </button>
+    </div>
+    
+</div>

@@ -1,0 +1,57 @@
+.example-card{
+    margin-top:30px;
+}
+.mat-elevation-z5 {
+    position: relative;
+    z-index: 2;
+ }
+ .example-full-width {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  table{
+      width:80%;
+      margin:auto;
+  }
+  table tr td.i{
+      width:50px;
+  }
+  i{
+      color:blue;
+  }
+  b, strong {
+    font-weight: 700;
+  }
+  h4{
+    color:#444;
+    font-weight: 400;
+  }
+  .example-action-table tr td{
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:20px;
+  }
+  .col-sm-4{
+      min-width: 300px;
+  }
+.myform{
+  padding:20px;
+}
+.login-btn{
+    background: #03A9F4;
+    color: white;
+    border-radius: 20px;
+
+}
+i{
+  color:gray;
+}
+.padding{
+  padding:10px;
+}
+.example-card{
+  transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    box-shadow:  0 5px 20px rgba(0,0,0,.05)!important;
+    border-radius: 4px;
+}

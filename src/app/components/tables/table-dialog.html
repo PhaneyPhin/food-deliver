@@ -1,0 +1,28 @@
+<div class="table-dialog">
+  <h3>{{ data.type }}</h3>
+  <table>
+    <tr>
+      <td>Table Number</td>
+      <td>
+        <mat-form-field>
+          <input matInput [(ngModel)]="data.table_num" />
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+        <td>Number of Seate</td>
+        <td>
+          <mat-form-field>
+            <input type="number" matInput [(ngModel)]="data.num_seate" />
+          </mat-form-field>
+        </td>
+      </tr>
+  </table>
+  <br>
+  <div mat-dialog-actions>
+    <button mat-raised-button (click)="submit()" color="primary">Save</button>
+    <button mat-raised-button [mat-dialog-close]="">
+      Cancel
+    </button>
+  </div>
+</div>

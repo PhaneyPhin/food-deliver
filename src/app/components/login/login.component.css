@@ -1,0 +1,47 @@
+.formcontrol{
+    height:300px;
+    width:700px;
+    margin:auto;
+    background:#3f51b5;
+    margin-top:20px;
+    margin-bottom:20px;
+    border-radius:8px;
+    box-shadow: 2px 2px gray;
+}
+.btn{
+
+ margin-top:5px;
+
+}
+.btn.submit{
+    margin-left:10%;
+    width:35%;
+
+}
+.btn.cancel{
+    margin-left:10%;
+    width:35%;
+    background:orange;
+    color:black;
+}
+
+table{
+    width:80%;
+   
+    color:#009688;
+    margin-left:10%;
+}
+td{
+    height:70px;
+    color:white;
+}
+.input{
+    width:80%;
+}
+input{
+    width:100%;
+    border:2px solid #817523;
+    height: 40px;
+    font-size:15pt;
+    color:#009688;
+}

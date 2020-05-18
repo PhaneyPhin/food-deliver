@@ -1,0 +1,26 @@
+table{
+    width:100%;
+
+}
+
+.label{
+    width:100px;
+} 
+
+::ng-deep .mat-input-wrapper{
+    width:400px !important;
+  }
+  button{
+      width:40%;
+  }
+  .dialog{
+      position: relative;
+      z-index: 999;
+  }
+  h1{
+      color:#2b377b;
+      text-align: center;
+  }
+  td{
+      color:#2b377b;
+  }

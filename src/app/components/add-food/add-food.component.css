@@ -1,0 +1,40 @@
+.mydiv{
+    width:500px;
+    margin:auto;
+    background: #009688;
+    color: white;
+    padding:30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px gray;
+}
+table{
+    width:100%;
+}
+td{
+    height:40px;
+    width:50%;
+}
+input,select,textarea{
+    height:30px;
+    width:300px;
+    border:1px solid orange;
+}
+.btn{
+    width:45%;
+    padding:5px;
+    margin-top:20px;
+    border-radius: 50px;
+    background:white;
+}
+.btn:nth-child(3){
+   
+    margin-left:10%;
+}
+.btn-submit{
+    background: #3a90b7;
+    color: white;
+}
+.btn-cancel{
+    background: orange;
+    color: white;
+}
